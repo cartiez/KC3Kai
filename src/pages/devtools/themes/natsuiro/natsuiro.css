@@ -2851,6 +2851,16 @@ ABYSS FLEET
 		background:#d22;
 	}
 }
+
+.ui-tooltip {
+	max-width:400px;
+	border-width:1px !important;
+	border:1px solid #222;
+	box-shadow:0 0 5px 1px #888;
+	background:#ffe;
+	font-size:11px;
+}
+
 /* Customized Scrollbar */
 ::-webkit-scrollbar {
 	width:8px;

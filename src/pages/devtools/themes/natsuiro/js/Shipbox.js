@@ -77,7 +77,8 @@ KC3改 Ship Box for Natsuiro theme
 		);
 		
 		$(".ship_img img", this.element).attr("src", KC3Meta.shipIcon(this.shipData.masterId))
-			.attr("title", tooltip);
+			.attr("title", tooltip)
+			.tooltip(KC3NatsuiroShipbox.tooltipOptions);
 		/*
 		$(".ship_img", this.element).addClass("hover").data("sid", this.shipData.masterId);
 		$(".ship_img", this.element).click(function(e){
@@ -443,4 +444,11 @@ KC3改 Ship Box for Natsuiro theme
 		}
 	};
 	
+	KC3NatsuiroShipbox.tooltipOptions = {
+		position: { my: "left+40 top-20", at: "left center" },
+		content: function(){
+			return $(this).attr("title").replace(/\n/g, "<br/>");
+		}
+	};
+
 })();
